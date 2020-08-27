@@ -17,12 +17,12 @@ function App() {
                 </div>
             </div>
             <div className='row mt-3'>
-                <div className='col'>
-                    <h2>Посты, созданные вами</h2>
+                <div className='col-6'>
+                    <h2>Созданные посты</h2>
                     <SyncPosts />
                 </div>
-                <div className='col'>
-                    <h2>Наши посты</h2>
+                <div className='col-6'>
+                    <h2>Посты с сервера</h2>
                     <AsyncPosts posts={[]}/>
                 </div>
             </div>

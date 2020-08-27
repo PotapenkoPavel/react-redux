@@ -1,4 +1,4 @@
-import {SHOW_ALERT, HIDE_ALERT} from '../actions/app'
+import {SHOW_ALERT, HIDE_ALERT, SHOW_LOADER, HIDE_LOADER} from '../actions/app'
 
 export let alertTimeoutId = null
 
@@ -23,5 +23,17 @@ export function showAlert(text) {
 export function hideAlert() {
     return {
         type: HIDE_ALERT,
+    }
+}
+
+export function showLoader() {
+    return {
+        type: SHOW_LOADER
+    }
+}
+
+export function hideLoader() {
+    return {
+        type: HIDE_LOADER
     }
 }
